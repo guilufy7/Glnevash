@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a12">
+  <meta name="description" content="Seletor pessoal de hosts PS4 por firmware.">
+  <title>PS4 HOST LAB // Firmware launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PS4 Host Lab início">
+      <span class="brand-mark">P4</span>
+      <span>PS4 <b>HOST LAB</b><small>PERSONAL FIRMWARE LAUNCHER</small></span>
+    </a>
+    <span class="status"><i></i> HTTPS READY</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> CONSOLE TOOLKIT / COMMUNITY PROJECT</div>
+      <h1>Seu console.<br><span>Seu firmware.</span></h1>
+      <p class="lead">Escolha a versão exata do sistema do seu PS4 e abra o fluxo comunitário correspondente. Simples, direto e feito para navegar também com controle.</p>
+      <div class="hero-meta">
+        <span><b>01</b> Selecionar firmware</span>
+        <span><b>02</b> Conferir compatibilidade</span>
+        <span><b>03</b> Abrir host upstream</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="select-title">
+      <div class="panel-head">
+        <div>
+          <div class="section-kicker">HOST ROUTER / 01</div>
+          <h2 id="select-title">Selecionar firmware</h2>
+        </div>
+        <span class="pill">MANUAL CHECK REQUIRED</span>
+      </div>
+
+      <label for="firmware">Versão do software do sistema</label>
+      <div class="select-wrap">
+        <select id="firmware">
+          <option value="13.04" selected>13.04 — PS4 Slim (seu firmware)</option>
+          <option value="13.02">13.02</option>
+          <option value="13.50">13.50</option>
+          <option value="13.52">13.52</option>
+          <option value="13.00">13.00</option>
+          <option value="12.50">12.50</option>
+          <option value="12.02">12.02</option>
+          <option value="11.00">11.00</option>
+          <option value="10.01">10.01</option>
+          <option value="9.00">9.00</option>
+          <option value="8.52">8.52</option>
+          <option value="7.55">7.55</option>
+          <option value="6.72">6.72</option>
+          <option value="5.05">5.05</option>
+        </select>
+        <span class="chevron">⌄</span>
+      </div>
+
+      <div id="result" class="result-card" aria-live="polite">
+        <div class="result-icon">↗</div>
+        <div class="result-copy">
+          <span class="result-kicker">MATCHED ROUTE</span>
+          <h3 id="route-title">Firmware 13.02–13.52</h3>
+          <p id="route-desc">Fluxo comunitário SlopKit / GoldHEN listado pelo projeto upstream.</p>
+          <div class="tags"><span>Browser host</span><span>Upstream assets</span><span>Verify first</span></div>
+        </div>
+      </div>
+
+      <a id="launch" class="launch-button" href="https://psx8.github.io/1352/index.html" target="_blank" rel="noopener noreferrer">
+        <span>ABRIR HOST COMPATÍVEL</span><b>↗</b>
+      </a>
+      <p class="fineprint">Este site é um launcher personalizado: o código do exploit e os payloads continuam hospedados no projeto comunitário indicado. Ele não copia nem verifica esses arquivos por você.</p>
+    </section>
+
+    <section class="notice-grid">
+      <article class="notice">
+        <div class="notice-icon">!</div>
+        <div><h3>Não atualize por impulso</h3><p>Se você pretende manter a possibilidade de jailbreak, não atualize o firmware sem confirmar a documentação atual para sua versão exata.</p></div>
+      </article>
+      <article class="notice">
+        <div class="notice-icon">↻</div>
+        <div><h3>Carregamento temporário</h3><p>Alguns métodos precisam ser executados novamente após desligar completamente o console. O comportamento varia por método.</p></div>
+      </article>
+    </section>
+
+    <section class="sources">
+      <div class="section-kicker">REFERÊNCIAS</div>
+      <h2>Confira antes de executar</h2>
+      <div class="source-links">
+        <a href="https://github.com/psx8/psx8.github.io" target="_blank" rel="noopener noreferrer"><span>Repositório e README do host</span><b>↗</b></a>
+        <a href="https://github.com/GoldHEN/GoldHEN" target="_blank" rel="noopener noreferrer"><span>Projeto GoldHEN</span><b>↗</b></a>
+        <a href="https://www.playstation.com/pt-br/support/hardware/ps4/system-software/" target="_blank" rel="noopener noreferrer"><span>Suporte oficial do sistema PS4</span><b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>PS4 HOST LAB <span class="muted">/ INDEPENDENT COMMUNITY LAUNCHER</span></span>
+    <span class="muted">Não afiliado à Sony Interactive Entertainment.</span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
